@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+   
+
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 0px;
+}
+
+.row-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.row-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.row-25,
+.row-75,
+.col-25,
+.col-75 {
+  padding: 0 16px;
+}
+  
+.inputs{
+margin-bottom: 20px;
+display: table;
+}
+.go{
+width:75px;
+padding: 5px;
+border:1px solid #ccc;
+border-radius: 5px;
+background-color:black ;
+color: white;
+}
+.login{
+background-color: lightgray;
+  padding: 5px 5px 5px 5px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+
+    </style>
+</head>
+<body>
+<form class="login">
+<div class="row-25">
+
+
+
+<div class="row">
+ <div class="col-xs-3"></div>
+ <div class="col-xs-3">Email ID</div>
+ <div class="col-xs-3">Password</div>
+</div>
+<div class="row">
+
+<div class="col-xs-3">
+ <label>Already Registered?</label>
+ 
+ </div>
+ 
+ <div class="col-xs-3">
+<input type="text"  id="email" name="email" style="width: 300px;" />
+
+</div>
+
+<div class="col-xs-3">
+<input type="password"    name="psw" >
+
+ </div>
+ <div class="col-sm-3">
+        
+      <button type="submit" class="go" >GO</button>
+      </div>
+</div>
+
+	  </div>
+</form>
+<br>
+
+<div style="width: 100%; height: 10px; border-bottom: 1px solid black; text-align: center">
+      <span style="font-size: 15px; background-color: #F3F5F6; ">
+        OR
+      </span>
+    </div>
+ <br>
+ <br>
+ 
+ <form>
+<div class="row-75">
+
+
+<div class="row">
+<div class="col-xs-3"><label>Register As*</label></div>
+</div>
+<div class="row">
+<div class="col-xs-3">
+	<select class="inputs" style="width: 200px" color="gray">
+	
+	<option >Select member type</option>
+	<option value="0"></option>
+	</select>
+	</div>
+	</div>
+	<label >Email ID*</label>
+	<input class="inputs" type="email" style="height: 40px; width: 200px; margin-top: 8px;"  placeholder="***@***.com" name="emailId" required/>
+	<div class="row-25">
+	<label >Password*</label>
+	<input class="inputs" style="display: table; width: 200px; margin-bottom: 20px;" type="password" placeholder="" required="required"/>
+	<div class="col-50">
+	<label >Confirm Password*</label>
+	<input class="inputs" style="display:table;width: 200px; margin-bottom: 20px;" type="password" placeholder="" required="required"/>
+	</div>
+	</div>
+	<label>Full name*</label>
+	<input  type="text" style="display:table;width: 200px; margin-bottom: 20px;"  placeholder="first name" required="required"/>
+	
+	<label>Display name</label>
+	<input  type="text" style="display:table;width: 200px; margin-bottom: 20px;"  placeholder=""/>
+	
+	
+	</form>
+	
+
+
+</div>
+
+</body>
+</html>
